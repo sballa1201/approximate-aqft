@@ -1,0 +1,18 @@
+[project]
+name = "approximate-qft"
+version = "0.1.0"
+description = "An implementation of AQFT circuit 1 from the following paper, https://doi.org/10.1038/s41598-025-21087-2, by Park and Ahn."
+readme = "README.md"
+authors = [
+    { name = "Shashi Balla" }
+]
+requires-python = ">=3.13"
+dependencies = ["numpy", "matplotlib", "pytest", "qiskit", "ipykernel", "pylatexenc", "sympy"]
+
+
+[project.scripts]
+approximate-qft = "approximate_qft:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
